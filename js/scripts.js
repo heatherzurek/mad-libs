@@ -1,4 +1,15 @@
+$(function() {
+  $("#formOne").submit(function(event) {
+    var yournameInput = $("input#yourname").val();
 
+    $(".yourname").text(yournameInput);
+
+    $("#letter").show();
+
+    event.preventDefault();
+
+  });
+});
 
 
 
