@@ -1,15 +1,43 @@
 $(function() {
-  $("#formOne").submit(function(event) {
-    var yournameInput = $("input#yourname").val();
+  $("#form").submit(function(event) {
+    var typesomethingInput = $("input#typesomething").val().toUpperCase();
 
-    $(".yourname").text(yournameInput);
+    $(".typesomething").text(typesomethingInput);
 
-    $("#letter").show();
+    $("#shout").show();
 
     event.preventDefault();
-
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $(function() {
+//   $("#formOne").submit(function(event) {
+//     var yournameInput = $("input#yourname").val();
+//
+//     $(".yourname").text(yournameInput);
+//
+//     $("#letter").show();
+//
+//     event.preventDefault();
+//
+//   });
+// });
 
 
 
